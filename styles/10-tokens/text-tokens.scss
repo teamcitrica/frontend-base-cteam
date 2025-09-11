@@ -17,7 +17,7 @@ $display-responsive: (
 );
 .text-display {
   font-family: var(--font-family-a);
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: -1px;
   text-decoration: none;
   text-transform: none;
@@ -48,7 +48,7 @@ $headline-responsive: (
 );
 .text-headline {
   font-family: var(--font-family-a);
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: -1px;
   text-decoration: none;
   text-transform: none;
@@ -125,22 +125,22 @@ $title-responsive: (
 // SUBTITLE
 $subtitle-responsive: (
   sm: (
-    font-size: 24px,
-    line-height: 24px
+    font-size: 18px,
+    line-height: 18px
   ),
   md: (
-    font-size: 24px,
-    line-height: 24px
+    font-size: 21px,
+    line-height: 21px
   ),
   lg: (
-    font-size: 32px,
-    line-height: 32px
+    font-size: 24px,
+    line-height: 24px
 
   )
 );
 .text-subtitle {
   font-family: var(--font-family-a);
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: -1px;
   text-decoration: none;
   text-transform: none;
@@ -156,21 +156,21 @@ $subtitle-responsive: (
 // BODY
 $body-responsive: (
   sm: (
-    font-size: 17px,
+    font-size: 14px,
     line-height: 20px
   ),
   md: (
-    font-size: 17px,
+    font-size: 16px,
     line-height: 20px
   ),
   lg: (
-    font-size: 20px,
-    line-height: 24px
+    font-size: 18px,
+    line-height: 22px
   )
 );
 .text-body {
-  font-family: var(--font-family-c);
-  font-weight: 500;
+  font-family: var(--font-family-a);
+  font-weight: 400;
   letter-spacing: 0.25px;
   text-decoration: none;
   text-transform: none;

@@ -1,34 +1,34 @@
 import React from 'react';
 import { TextProps } from '@/shared/types/components/text.type';
+import clsx from 'clsx';
 
-const Text: React.FC<TextProps> = ({ children, variant, color, weight = 'normal', textColor='color-text-black'}) => {
+const Text: React.FC<TextProps> = ({ 
+  children, 
+  variant, 
+  color, 
+  weight = 'normal', 
+  textColor = 'color-text-black',
+  className,
+  as: Component = 'span'
+}) => {
+  const colorStyle = color ? { color } : { color: `var(--${textColor})` };
 
-  const colorStyle = color ? { color } : { color: `var(--${textColor})`  };
+  const weightClass = weight !== 'normal' ? `text-${variant}-${weight}` : '';
 
-  switch (weight) {
-    case 'light':
-      var classWeight = ` text-${variant}-light`;
-      break;
-    case 'normal':    
-      var classWeight = '';
-      break;
-    case 'bold':
-      var classWeight = ` text-${variant}-bold`;
-      break;
-    default: 
-      var classWeight = '';
-      break;
-  } 
+  const classes = clsx(
+    `text-${variant}`,
+    weightClass,
+    className
+  );
+
   return (
-    <span 
-      className={`text-${variant}${classWeight}`}
-      style={{
-        ...colorStyle,
-      }}
-      >
-    {children}
-    </span>
-  )
+    <Component 
+      className={classes}
+      style={colorStyle}
+    >
+      {children}
+    </Component>
+  );
 };
 
 export default Text;

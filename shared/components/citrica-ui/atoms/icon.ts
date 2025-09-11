@@ -1,7 +1,6 @@
 import React from 'react';
 import * as LucideIcons from "lucide-react";
 import type { LucideProps } from "lucide-react";
-import { getCSSVariable } from '@/shared/utils/general';
 
 // Define the type for all available Lucide icons
 type IconName = keyof typeof LucideIcons;
