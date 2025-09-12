@@ -3,16 +3,18 @@ import React from "react";
 import Text from "../atoms/text";
 import {Button as ButtonHeroUI} from "@heroui/react";
 import clsx from 'clsx';
+import { get } from "http";
 
 type ButtonProps = {
   onClick?: () => void;
   label?: string;
   children?: React.ReactNode;
-  variant?: "solid" | "bordered" | "light" | "flat" | "faded" | "shadow" | "ghost";
+  // variant?: "solid" | "bordered" | "light" | "flat" | "faded" | "shadow" | "ghost";
+  variant?: "primary" | "secondary" | "flat" | "success" | "warning" | "danger";
   textVariant?: "label" | "body" | "title" | "display" | "headline" | "subtitle";
-  color?: "primary" | "secondary" | "default" | "success" | "warning" | "danger";
+  // color?: "primary" | "secondary" | "default" | "success" | "warning" | "danger";
   size?: "sm" | "md" | "lg";
-  radius?: "none" | "sm" | "md" | "lg" | "full";
+  // radius?: "none" | "sm" | "md" | "lg" | "full";
   className?: string;
   type?: "button" | "submit" | "reset";
   disabled?: boolean;
@@ -22,25 +24,54 @@ type ButtonProps = {
   fullWidth?: boolean;
 };
 
-const getTextColorByVariantAndColor = (variant: string, color: string) => {
-  if (variant === "solid") {
-    return color === "primary" || color === "warning" ? "black" : "white";
+
+
+
+const getTextColorByVariant = (variant: string) => {
+  switch (variant) {
+    case "primary":
+      return "color-on-primary";
+    case "secondary":
+      return "color-on-secondary";
+    case "success":
+      return "color-on-success";
+    case "warning":
+      return "color-on-warning";
+    case "danger":
+      return "color-on-danger";
+    case "flat":
+      return "color-black";
+    default:
+      return "color-on-primary";
   }
-  if (variant === "bordered" || variant === "light" || variant === "ghost") {
-    return "inherit";
+}
+
+const getBtnClassByVariant = (variant: string) => {
+  switch (variant) {
+    case "primary":
+      return "btn-primary";
+    case "secondary":
+      return "btn-secondary";
+    case "success":
+      return "btn-success";
+    case "warning":
+      return "btn-warning";
+    case "danger":
+      return "btn-danger";
+    case "flat":
+      return "btn-flat";
+    default:
+      return "btn-primary";
   }
-  return "inherit";
 }
 
 const Button = ({ 
   onClick, 
   label,
   children,
-  color = "primary", 
-  textVariant = "label", 
-  variant = "solid", 
+  textVariant = "label", // Set default text variant
+  variant = "primary", 
   size = "md",
-  radius = "md",
   className = "",
   type = "button",
   disabled = false,
@@ -52,7 +83,7 @@ const Button = ({
   const content = children || (label && (
     <Text 
       variant={textVariant} 
-      color={getTextColorByVariantAndColor(variant, color)}
+      textColor={getTextColorByVariant(variant)}
     >
       {label}
     </Text>
@@ -60,12 +91,16 @@ const Button = ({
 
   return (
     <ButtonHeroUI 
-      color={color} 
+      color="default" 
       onPress={onClick} 
-      className={clsx("py-2 px-2", className)} 
-      variant={variant}
+      className={clsx(
+        "btn-citrica-ui", 
+        getBtnClassByVariant(variant), 
+        className
+      )} 
+      // variant={variant}
       size={size}
-      radius={radius}
+      radius={"none"}
       type={type}
       isDisabled={disabled}
       isLoading={isLoading}

@@ -9,7 +9,7 @@ interface CardProps {
   className?: string;
   shadow?: 'none' | 'sm' | 'md' | 'lg';
   radius?: 'none' | 'sm' | 'md' | 'lg';
-  // variant?: 'shadow' | 'bordered' | 'light' | 'flat';
+  variant?: 'shadow' | 'bordered' | 'light' | 'flat';
   isPressable?: boolean;
   onPress?: () => void;
 }
@@ -21,7 +21,6 @@ const Card = ({
   className,
   shadow = 'sm',
   radius = 'md',
-  // variant = 'shadow',
   isPressable = false,
   onPress
 }: CardProps) => {
@@ -30,6 +29,7 @@ const Card = ({
       className={clsx(className)}
       shadow={shadow}
       radius={radius}
+      // variant={variant}
       isPressable={isPressable}
       onPress={onPress}
     >

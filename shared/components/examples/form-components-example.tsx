@@ -46,10 +46,10 @@ const FormComponentsExample = () => {
       <Card>
         <div className="p-8">
           <div className="text-center mb-8">
-            <Text variant="headline" textColor="color-text-black">
+            <Text variant="headline" textColor="color-black">
               Ejemplo de Componentes de Formulario
             </Text>
-            <Text variant="body" textColor="color-text-black" className="mt-2">
+            <Text variant="body" textColor="color-black" className="mt-2">
               Demostración de los componentes Input, Textarea y Select del Citrica UI System
             </Text>
           </div>
@@ -93,7 +93,7 @@ const FormComponentsExample = () => {
               label="País de origen"
               placeholder="Selecciona tu país"
               options={countryOptions}
-              onSelectionChange={(keys) => {
+              onSelectionChange={(keys:any) => {
                 const value = Array.from(keys)[0] as string;
                 handleInputChange('country')(value);
               }}
@@ -106,7 +106,7 @@ const FormComponentsExample = () => {
               label="Categoría de interés"
               placeholder="Selecciona una categoría"
               options={categoryOptions}
-              onSelectionChange={(keys) => {
+              onSelectionChange={(keys:any) => {
                 const value = Array.from(keys)[0] as string;
                 handleInputChange('category')(value);
               }}
@@ -130,8 +130,7 @@ const FormComponentsExample = () => {
             <div className="text-center pt-4">
               <Button
                 label="Enviar formulario"
-                variant="solid"
-                color="primary"
+                variant="primary"
                 textVariant="body"
                 startContent={
                   <span>✓</span>
@@ -147,7 +146,7 @@ const FormComponentsExample = () => {
           {/* Vista previa de datos */}
           <Card className="mt-8 bg-gray-50">
             <div className="p-6">
-              <Text variant="subtitle" textColor="color-text-black" className="mb-4">
+              <Text variant="subtitle" textColor="color-black" className="mb-4">
                 Vista previa de los datos:
               </Text>
               <pre className="text-sm text-gray-600 whitespace-pre-wrap">

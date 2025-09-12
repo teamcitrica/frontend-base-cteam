@@ -3,8 +3,30 @@
 
 @mixin light-theme {
   // Black & white
-  --color-text-white: #{$color-text-white};
-  --color-text-black: #{$color-text-black};
+  --color-white: #{$color-white};
+  --color-black: #{$color-black};
+
+  // Button colors
+  --color-primary-btn: #{$color-light-primary-btn};
+  --color-primary-btn-text: #{$color-light-primary-btn-text};
+  --color-primary-btn-hover: #{$color-light-primary-btn-hover};
+  --color-primary-btn-text-hover: #{$color-light-primary-btn-text-hover};
+  --color-primary-btn-border: #{$color-light-primary-btn-border};
+  --color-primary-btn-border-hover: #{$color-light-primary-btn-border-hover};
+
+  --color-secondary-btn: #{$color-light-secondary-btn};
+  --color-secondary-btn-text: #{$color-light-secondary-btn-text};
+  --color-secondary-btn-hover: #{$color-light-secondary-btn-hover};
+  --color-secondary-btn-text-hover: #{$color-light-secondary-btn-text-hover};
+  --color-secondary-btn-border: #{$color-light-secondary-btn-border};
+  --color-secondary-btn-border-hover: #{$color-light-secondary-btn-border-hover};
+
+  --color-flat-btn: #{$color-light-flat-btn};
+  --color-flat-btn-text: #{$color-light-flat-btn-text};
+  --color-flat-btn-hover: #{$color-light-flat-btn-hover};
+  --color-flat-btn-text-hover: #{$color-light-flat-btn-text-hover};
+  --color-flat-btn-border: #{$color-light-flat-btn-border};
+  --color-flat-btn-border-hover: #{$color-light-flat-btn-border-hover};
     
   // Primary colors
   --color-primary: #{$color-light-primary};

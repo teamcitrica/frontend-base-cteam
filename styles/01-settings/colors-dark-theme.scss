@@ -3,8 +3,30 @@
 
 @mixin dark-theme {
   // Black & white
-  --color-text-white: #{$color-text-white};
-  --color-text-black: #{$color-text-black};
+  --color-white: #{$color-white};
+  --color-black: #{$color-black};
+
+  // Button colors
+  --color-primary-btn: #{$color-dark-primary-btn};
+  --color-primary-btn-text: #{$color-dark-primary-btn-text};
+  --color-primary-btn-hover: #{$color-dark-primary-btn-hover};
+  --color-primary-btn-text-hover: #{$color-dark-primary-btn-text-hover};
+  --color-primary-btn-border: #{$color-dark-primary-btn-border};
+  --color-primary-btn-border-hover: #{$color-dark-primary-btn-border-hover};
+
+  --color-secondary-btn: #{$color-dark-secondary-btn};
+  --color-secondary-btn-text: #{$color-dark-secondary-btn-text};
+  --color-secondary-btn-hover: #{$color-dark-secondary-btn-hover};
+  --color-secondary-btn-text-hover: #{$color-dark-secondary-btn-text-hover};
+  --color-secondary-btn-border: #{$color-dark-secondary-btn-border};
+  --color-secondary-btn-border-hover: #{$color-dark-secondary-btn-border-hover};
+
+  --color-flat-btn: #{$color-dark-flat-btn};
+  --color-flat-btn-text: #{$color-dark-flat-btn-text};
+  --color-flat-btn-hover: #{$color-dark-flat-btn-hover};
+  --color-flat-btn-text-hover: #{$color-dark-flat-btn-text-hover};
+  --color-flat-btn-border: #{$color-dark-flat-btn-border};
+  --color-flat-btn-border-hover: #{$color-dark-flat-btn-border-hover};
   
   // Primary colors
   --color-primary: #{$color-dark-primary};

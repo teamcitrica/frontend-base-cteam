@@ -1,10 +1,8 @@
 "use client"
 import React from 'react'
-import Card from '@ui/atoms/card';
-import Text from '@ui/atoms/text';
 import { Container, Col } from '@/styles/07-objects/objects';
 import Icon from '@ui/atoms/icon';
-import Button from '@ui/molecules/button';
+import { Button, Text, Sidebar } from '@citrica-ui';
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import {addToast} from "@heroui/toast";

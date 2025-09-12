@@ -7,7 +7,7 @@ const Text: React.FC<TextProps> = ({
   variant, 
   color, 
   weight = 'normal', 
-  textColor = 'color-text-black',
+  textColor = 'color-black',
   className,
   as: Component = 'span'
 }) => {
@@ -17,6 +17,7 @@ const Text: React.FC<TextProps> = ({
 
   const classes = clsx(
     `text-${variant}`,
+    'text-component',
     weightClass,
     className
   );

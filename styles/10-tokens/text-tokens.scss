@@ -3,66 +3,66 @@
 // DISPLAY
 $display-responsive: (
    sm: (
-    font-size: 44px,
-    line-height: 48px
-  ),
-  md: (
     font-size: 36px,
     line-height: 40px
   ),
+  md: (
+    font-size: 40px,
+    line-height: 48px
+  ),
   lg: (
-    font-size: 60px,
-    line-height: 64px
+    font-size: 40px,
+    line-height: 48px
   )
 );
 .text-display {
   font-family: var(--font-family-a);
-  font-weight: 600;
-  letter-spacing: -1px;
+  font-weight: 500;
+  letter-spacing: 0;
   text-decoration: none;
   text-transform: none;
   @include a-set($display-responsive);
   &-bold{
-    font-weight: 400;
+    font-weight: 300;
   }
   &-light{
-    font-weight: 400;
+    font-weight: 700;
   }
 }
 
 // HEADLINE
 $headline-responsive: (
   sm: (
-    font-size: 32px,
-    line-height: 32px
-  ),
-  md: (
-    font-size: 36px,
+    font-size: 28px,
     line-height: 36px
   ),
+  md: (
+    font-size: 32px,
+    line-height: 40px
+  ),
   lg: (
-    font-size: 48px,
-    line-height: 48px
+    font-size: 32px,
+    line-height: 40px
  
   )
 );
 .text-headline {
   font-family: var(--font-family-a);
-  font-weight: 700;
-  letter-spacing: -1px;
+  font-weight: 500;
+  letter-spacing: 0;
   text-decoration: none;
   text-transform: none;
   @include a-set($headline-responsive);
   &-bold{
-    font-weight: 400;
+    font-weight: 300;
   }
   &-light{
-    font-weight: 400;
+    font-weight: 700;
   }
 }
 
 //custom
-$headlinecustom-responsive: (
+$body-big-responsive: (
   sm: (
     font-size: 32px,
     line-height: 32px
@@ -77,48 +77,48 @@ $headlinecustom-responsive: (
  
   )
 );
-.text-headlinecustom {
+.text-body-big {
   font-family: var(--font-family-a);
-  font-weight: 400;
-  letter-spacing: -1px;
+  font-weight: 500;
+  letter-spacing: 0;
   text-decoration: none;
   text-transform: none;
-  @include a-set($headlinecustom-responsive);
+  @include a-set($body-big-responsive);
   &-bold{
-    font-weight: 400;
+    font-weight: 300;
   }
   &-light{
-    font-weight: 400;
+    font-weight: 700;
   }
 }
 
 // TITLE
 $title-responsive: (
   sm: (
-    font-size: 34px,
-    line-height: 34px
-  ),
-  md: (
-    font-size: 28px,
+    font-size: 22px,
     line-height: 28px
   ),
+  md: (
+    font-size: 25px,
+    line-height: 32px
+  ),
   lg: (
-    font-size: 40px,
-    line-height: 40px
+    font-size: 25px,
+    line-height: 32px
   )
 );
 .text-title {
   font-family: var(--font-family-b);
-  font-weight: 400;
-  letter-spacing: -1px;
+  font-weight: 500;
+  letter-spacing: 0;
   text-decoration: none;
   text-transform: none;
   @include a-set($title-responsive);
   &-bold{
-    font-weight: 400;
+    font-weight: 300;
   }
   &-light{
-    font-weight: 400;
+    font-weight: 700;
   }
 }
 
@@ -126,30 +126,30 @@ $title-responsive: (
 $subtitle-responsive: (
   sm: (
     font-size: 18px,
-    line-height: 18px
+    line-height: 24px
   ),
   md: (
-    font-size: 21px,
-    line-height: 21px
+    font-size: 20px,
+    line-height: 28px
   ),
   lg: (
-    font-size: 24px,
-    line-height: 24px
+    font-size: 20px,
+    line-height: 28px
 
   )
 );
 .text-subtitle {
   font-family: var(--font-family-a);
-  font-weight: 700;
-  letter-spacing: -1px;
+  font-weight: 500;
+  letter-spacing: 0;
   text-decoration: none;
   text-transform: none;
   @include a-set($subtitle-responsive);
   &-bold{
-    font-weight: 400;
+    font-weight: 300;
   }
   &-light{
-    font-weight: 400;
+    font-weight: 700;
   }
 }
 
@@ -161,55 +161,55 @@ $body-responsive: (
   ),
   md: (
     font-size: 16px,
-    line-height: 20px
+    line-height: 24px
   ),
   lg: (
-    font-size: 18px,
-    line-height: 22px
+    font-size: 16px,
+    line-height: 24px
   )
 );
 .text-body {
   font-family: var(--font-family-a);
-  font-weight: 400;
-  letter-spacing: 0.25px;
+  font-weight: 500;
+  letter-spacing: 0;
   text-decoration: none;
   text-transform: none;
   @include a-set($body-responsive);
   &-bold{
-    font-weight: 700;
+    font-weight: 300;
   }
   &-light{
-    font-weight: 200;
+    font-weight: 700;
   }
 }
 
 // LABEL
 $label-responsive: (
   sm: (
-    font-size: 14px,
-    line-height: 15px
+    font-size: 11px,
+    line-height: 16px
   ),
   md: (
-    font-size: 12px,
-    line-height: 13px
+    font-size: 13px,
+    line-height: 20px
   ),
   lg: (
-    font-size: 15px,
-    line-height: 16px
+    font-size: 13px,
+    line-height: 20px
   )
 );
 .text-label {
   font-family: var(--font-family-c);
-  font-weight: normal;
+  font-weight: 500;
   letter-spacing: 0;
   text-decoration: none;
   text-transform: none;
   @include a-set($label-responsive);
   &-bold{
-    font-weight: 700;
+    font-weight: 300;
   }
   &-light{
-    font-weight: 200;
+    font-weight: 700;
   }
 }
 
@@ -218,5 +218,5 @@ $label-responsive: (
   color: var(--text-default-color);
 }
 .text-black-color{
-  color: var(--color-text-black);
+  color: var(--color-black);
 }
