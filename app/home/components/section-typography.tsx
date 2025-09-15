@@ -2,7 +2,7 @@
 import React from 'react'
 import { Container, Col } from '@/styles/07-objects/objects';
 import Icon from '@ui/atoms/icon';
-import { Button, Text, Sidebar } from '@citrica-ui';
+import { Button, Text, Sidebar, Input } from '@citrica-ui';
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import {addToast} from "@heroui/toast";
@@ -51,6 +51,12 @@ const SectionTypography = () => {
               variant="secondary" />
           </div>
         </Col>
+        <div className=''>
+          <Input
+          label='nombre'
+          placeholder='escribe tu nombre aqui'
+          variant='primary'/>
+        </div>
       </Container>
       <Container>
         <Col cols={{ lg: 12, md: 6, sm: 4 }}>

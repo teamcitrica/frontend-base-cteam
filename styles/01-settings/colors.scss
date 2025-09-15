@@ -211,5 +211,40 @@ $color-dark-inverse-surface: #fef6dc;
 $color-dark-inverse-on-surface: #222222;
 $color-dark-inverse-primary: #964f20;
 
+// INPUT COLORS
+// Light theme input colors
+$color-light-primary-input-bg: #FFFFFF;
+$color-light-primary-input-border: grey;
+$color-light-primary-input-border-hover: #00cc00;
+$color-light-primary-input-label: #222222;
+$color-light-primary-input-text: #222222;
+$color-light-primary-input-text-hover: #222222;
+$color-light-primary-input-placeholder: #8d957e;
+
+$color-light-secondary-input-bg: #cad3d0;
+$color-light-secondary-input-border: #ff0000;
+$color-light-secondary-input-border-hover: #cc0000;
+$color-light-secondary-input-label: #222222;
+$color-light-secondary-input-text: #222222;
+$color-light-secondary-input-text-hover: #222222;
+$color-light-secondary-input-placeholder: #8d957e;
+
+// Dark theme input colors
+$color-dark-primary-input-bg: #222222;
+$color-dark-primary-input-border: #ff0000;
+$color-dark-primary-input-border-hover: #cc0000;
+$color-dark-primary-input-label: #fef6dc;
+$color-dark-primary-input-text: #fef6dc;
+$color-dark-primary-input-text-hover: #fef6dc;
+$color-dark-primary-input-placeholder: #8d957e;
+
+$color-dark-secondary-input-bg: #8d957e;
+$color-dark-secondary-input-border: #ffff00;
+$color-dark-secondary-input-border-hover: #cccc00;
+$color-dark-secondary-input-label: #fef6dc;
+$color-dark-secondary-input-text: #fef6dc;
+$color-dark-secondary-input-text-hover: #fef6dc;
+$color-dark-secondary-input-placeholder: #cad3d0;
+
 $color-scrim: #000;
 $color-shadow: #000;

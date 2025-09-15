@@ -1,3 +1,4 @@
+"use client"
 import Footer from "@/shared/components/citrica-ui/organism/footer";
 import SectionTypography from "./home/components/section-typography";
 import { Header } from "@citrica-ui";

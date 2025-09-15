@@ -13,7 +13,7 @@ interface InputProps {
   onValueChange?: (value: string) => void;
   name?: string;
   type?: 'text' | 'email' | 'password' | 'number' | 'tel' | 'url' | 'search';
-  variant?: 'flat' | 'bordered' | 'faded' | 'underlined';
+  variant?: 'primary' | 'secondary' | 'flat' | 'bordered' | 'faded' | 'underlined';
   color?: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'danger';
   size?: 'sm' | 'md' | 'lg';
   radius?: 'none' | 'sm' | 'md' | 'lg' | 'full';
@@ -60,7 +60,7 @@ const Input = ({
   onValueChange,
   name,
   type = 'text',
-  variant = 'bordered',
+  variant = 'primary',
   color = 'default',
   size = 'md',
   radius = 'md',
@@ -98,6 +98,24 @@ const Input = ({
     <Icon name={endIcon} size={iconSize} color={iconColor} />
   ) : endContent;
 
+  const getInputClassByVariant = (variant: string) => {
+    switch (variant) {
+      case "primary":
+        return "input-primary";
+      case "secondary":
+        return "input-secondary";
+      case "flat":
+      case "bordered":
+      case "faded":
+      case "underlined":
+      default:
+        return "";
+    }
+  };
+
+  const shouldUseCustomVariant = variant === 'primary' || variant === 'secondary';
+  const heroVariant = shouldUseCustomVariant ? 'bordered' : variant;
+
   return (
     <HeroInput
       label={label}
@@ -108,7 +126,7 @@ const Input = ({
       onValueChange={onValueChange}
       name={name}
       type={type}
-      variant={variant}
+      variant={heroVariant}
       color={color}
       size={size}
       radius={radius}
@@ -118,7 +136,11 @@ const Input = ({
       isInvalid={isInvalid}
       errorMessage={errorMessage}
       description={description}
-      className={clsx(className)}
+      className={clsx(
+        "input-citrica-ui",
+        getInputClassByVariant(variant),
+        className
+      )}
       classNames={classNames}
       startContent={startIconContent}
       endContent={endIconContent}
