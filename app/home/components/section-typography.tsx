@@ -1,11 +1,10 @@
 "use client"
 import React from 'react'
 import { Container, Col } from '@/styles/07-objects/objects';
-import Icon from '@ui/atoms/icon';
-import { Button, Text, Sidebar, Input } from '@citrica-ui';
+import { Button, Text, Input, Icon } from '@citrica-ui';
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
-import {addToast} from "@heroui/toast";
+import { addToast } from "@heroui/toast";
 
 const SectionTypography = () => {
   const { theme, setTheme } = useTheme();
@@ -38,7 +37,7 @@ const SectionTypography = () => {
             <Text variant="label">Label</Text>
           </div>
           <div>
-            <Button 
+            <Button
               onClick={() => {
                 addToast({
                   title: "Toast title",
@@ -53,9 +52,9 @@ const SectionTypography = () => {
         </Col>
         <div className=''>
           <Input
-          label='nombre'
-          placeholder='escribe tu nombre aqui'
-          variant='primary'/>
+            label='nombre'
+            placeholder='escribe tu nombre aqui'
+            variant='primary' />
         </div>
       </Container>
       <Container>
