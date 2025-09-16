@@ -2,7 +2,7 @@
 import React from 'react'
 import { Container, Col } from '@/styles/07-objects/objects';
 import Icon from '@ui/atoms/icon';
-import { Button, Text, Sidebar, Input } from '@citrica-ui';
+import { Button, Text, Sidebar, Input, Select } from '@citrica-ui';
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import {addToast} from "@heroui/toast";
@@ -56,6 +56,23 @@ const SectionTypography = () => {
           label='nombre'
           placeholder='escribe tu nombre aqui'
           variant='primary'/>
+        </div>
+        <div>
+  <Select
+    variant="primary"
+    label="País"
+    placeholder="prueba de que sirve johan"
+    startIcon="Globe"
+    required
+    options={[
+      { value: "es", label: "España" },
+      { value: "mx", label: "México" },
+      { value: "ar", label: "Argentina" }
+    ]}
+    onSelectionChange={(keys) => {
+      console.log('Seleccionado:', keys);
+    }}
+  />
         </div>
       </Container>
       <Container>

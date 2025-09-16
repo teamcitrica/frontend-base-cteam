@@ -44,6 +44,36 @@
   --color-secondary-input-text: #{$color-light-secondary-input-text};
   --color-secondary-input-text-hover: #{$color-light-secondary-input-text-hover};
   --color-secondary-input-placeholder: #{$color-light-secondary-input-placeholder};
+
+  // Select colors
+  --color-primary-select-bg: #{$color-light-primary-select-bg};
+  --color-primary-select-border: #{$color-light-primary-select-border};
+  --color-primary-select-border-hover: #{$color-light-primary-select-border-hover};
+  --color-primary-select-label: #{$color-light-primary-select-label};
+  --color-primary-select-text: #{$color-light-primary-select-text};
+  --color-primary-select-text-hover: #{$color-light-primary-select-text-hover};
+  --color-primary-select-placeholder: #{$color-light-primary-select-placeholder};
+
+  --color-secondary-select-bg: #{$color-light-secondary-select-bg};
+  --color-secondary-select-border: #{$color-light-secondary-select-border};
+  --color-secondary-select-border-hover: #{$color-light-secondary-select-border-hover};
+  --color-secondary-select-label: #{$color-light-secondary-select-label};
+  --color-secondary-select-text: #{$color-light-secondary-select-text};
+  --color-secondary-select-text-hover: #{$color-light-secondary-select-text-hover};
+  --color-secondary-select-placeholder: #{$color-light-secondary-select-placeholder};
+
+  // Select Items colors
+  --color-primary-select-item-text: #{$color-light-primary-select-item-text};
+  --color-primary-select-item-bg: #{$color-light-primary-select-item-bg};
+  --color-primary-select-item-bg-hover: #{$color-light-primary-select-item-bg-hover};
+  --color-primary-select-item-bg-selected: #{$color-light-primary-select-item-bg-selected};
+  --color-primary-select-item-text-selected: #{$color-light-primary-select-item-text-selected};
+
+  --color-secondary-select-item-text: #{$color-light-secondary-select-item-text};
+  --color-secondary-select-item-bg: #{$color-light-secondary-select-item-bg};
+  --color-secondary-select-item-bg-hover: #{$color-light-secondary-select-item-bg-hover};
+  --color-secondary-select-item-bg-selected: #{$color-light-secondary-select-item-bg-selected};
+  --color-secondary-select-item-text-selected: #{$color-light-secondary-select-item-text-selected};
     
   // Primary colors
   --color-primary: #{$color-light-primary};
