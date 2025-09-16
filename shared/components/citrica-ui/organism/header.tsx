@@ -1,10 +1,14 @@
+"use client";
 import React from 'react'
 import { Col, Container } from '@citrica/objects';
-import Text from '@ui/atoms/text';
-import Button from '@ui/molecules/button';
-import Icon from '@ui/atoms/icon';
+import { Text, Button, Icon } from '@citrica-ui';
+import { siteConfig } from '@/config/site';
 
-const Header = () => {
+interface HeaderProps {
+  logo?: React.ReactNode;
+}
+
+const Header = ({ logo }: HeaderProps) => {
   const [isScrolled, setIsScrolled] = React.useState(false);
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -17,12 +21,7 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navItems = [
-    { title: "Inicio", href: "#home" },
-    { title: "Servicios", href: "#services" },
-    { title: "Portfolio", href: "#portfolio" },
-    { title: "Contacto", href: "#contact" }
-  ];
+  const navItems = siteConfig.navLinks;
 
   const scrollToSection = (href: string) => {
     if (href.startsWith('#')) {
@@ -47,21 +46,27 @@ const Header = () => {
           
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="flex items-center space-x-1">
-              <div className="w-8 h-8 bg-[#964f20] rounded-sm flex items-center justify-center">
-                <Text variant="label" color="#FFFFFF" weight="bold">L</Text>
-              </div>
-              <div className="w-2 h-8 bg-[#8d957e] rounded-sm"></div>
-            </div>
-            <div>
-              <Text 
-                variant="subtitle" 
-                textColor="color-on-surface"
-                weight="bold"
-              >
-                LIENZO
-              </Text>
-            </div>
+            {logo ? (
+              logo
+            ) : (
+              <>
+                <div className="flex items-center space-x-1">
+                  <div className="w-8 h-8 bg-[#964f20] rounded-sm flex items-center justify-center">
+                    <Text variant="label" color="#FFFFFF" weight="bold">L</Text>
+                  </div>
+                  <div className="w-2 h-8 bg-[#8d957e] rounded-sm"></div>
+                </div>
+                <div>
+                  <Text 
+                    variant="subtitle" 
+                    textColor="color-on-surface"
+                    weight="bold"
+                  >
+                    LIENZO
+                  </Text>
+                </div>
+              </>
+            )}
           </div>
 
           {/* Desktop Navigation */}

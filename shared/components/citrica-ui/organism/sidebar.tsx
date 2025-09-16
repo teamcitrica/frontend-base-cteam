@@ -4,8 +4,8 @@ import { Suspense } from 'react';
 import { Button, Link } from "@heroui/react"
 import { ChevronDown, Menu } from "lucide-react"
 import type { SidebarProps, MenuItem } from "../../../types/sidebar"
-import Icon, { IconName } from "@/shared/components/citrica-ui/atoms/icon"
-import Text from "../atoms/text"
+import { Icon, Text } from "@citrica-ui"
+import { IconName } from "@/shared/components/citrica-ui/atoms/icon"
 import { usePathname } from 'next/navigation';
 import { useSearchParams } from 'next/navigation'
 import { getParamFromPath } from "@/shared/utils/general"

@@ -1,11 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import Input from '@ui/atoms/input';
-import Textarea from '@ui/atoms/textarea';
-import Select from '@ui/atoms/select';
-import Button from '@ui/molecules/button';
-import Card from '@ui/atoms/card';
-import Text from '@ui/atoms/text';
+import { Input, Textarea, Select, Button, Card, Text } from '@citrica-ui';
 
 const FormComponentsExample = () => {
   const [formData, setFormData] = useState({

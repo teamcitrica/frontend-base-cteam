@@ -4,28 +4,6 @@
 $color-white: #fefefe;
 $color-black: #222222;
 
-// BUTTON COLORS
-$color-light-primary-btn: #964f20;
-$color-light-primary-btn-text: #fef6dc;
-$color-light-primary-btn-hover: #964f20;
-$color-light-primary-btn-text-hover: #fef6dc;
-$color-light-primary-btn-border: #fef6dc;
-$color-light-primary-btn-border-hover: #fef6dc;
-
-$color-light-secondary-btn: #978C2C;
-$color-light-secondary-btn-text: #fef6dc;
-$color-light-secondary-btn-hover: #978C2C;
-$color-light-secondary-btn-text-hover: #fef6dc;
-$color-light-secondary-btn-border: #fef6dc;
-$color-light-secondary-btn-border-hover: #fef6dc;
-
-$color-light-flat-btn: transparent;
-$color-light-flat-btn-text: #964f20;
-$color-light-flat-btn-hover: #fef6dc;
-$color-light-flat-btn-text-hover: #b5a93c;
-$color-light-flat-btn-border: transparent;
-$color-light-flat-btn-border-hover: transparent;
-
 // LIGHT THEME COLORS
 $color-light-primary: #964f20;
 $color-light-on-primary: #fef6dc;
@@ -111,28 +89,6 @@ $color-light-inverse-primary: #b5a93c;
 
 // DARK THEME COLORS
 
-// BUTTON COLORS
-$color-dark-primary-btn: #b5a93c;
-$color-dark-primary-btn-text: #222222;
-$color-dark-primary-btn-hover: #964f20;
-$color-dark-primary-btn-text-hover: #fef6dc;
-$color-dark-primary-btn-border: #222222;
-$color-dark-primary-btn-border-hover: #fef6dc;
-
-$color-dark-secondary-btn: #cad3d0;
-$color-dark-secondary-btn-text: #222222;
-$color-dark-secondary-btn-hover: #8d957e;
-$color-dark-secondary-btn-text-hover: #fef6dc;
-$color-dark-secondary-btn-border: #222222;
-$color-dark-secondary-btn-border-hover: #fef6dc;
-
-$color-dark-flat-btn: transparent;
-$color-dark-flat-btn-text: #b5a93c;
-$color-dark-flat-btn-hover: #222222;
-$color-dark-flat-btn-text-hover: #fef6dc;
-$color-dark-flat-btn-border: transparent;
-$color-dark-flat-btn-border-hover: transparent;
-
 $color-dark-primary: #b5a93c;
 $color-dark-on-primary: #222222;
 $color-dark-primary-container: #964f20;
@@ -211,28 +167,31 @@ $color-dark-inverse-surface: #fef6dc;
 $color-dark-inverse-on-surface: #222222;
 $color-dark-inverse-primary: #964f20;
 
-// INPUT COLORS
-// Light theme input colors
+$color-scrim: #000;
+$color-shadow: #000;
+
+// TOKENS FOR THEMES
+// INPUT COLORS Light theme input
 $color-light-primary-input-bg: #FFFFFF;
 $color-light-primary-input-border: grey;
-$color-light-primary-input-border-hover: #00cc00;
+$color-light-primary-input-border-hover: #964f20;
 $color-light-primary-input-label: #222222;
 $color-light-primary-input-text: #222222;
 $color-light-primary-input-text-hover: #222222;
 $color-light-primary-input-placeholder: #8d957e;
 
 $color-light-secondary-input-bg: #cad3d0;
-$color-light-secondary-input-border: #ff0000;
-$color-light-secondary-input-border-hover: #cc0000;
+$color-light-secondary-input-border: #964f20;
+$color-light-secondary-input-border-hover: #964f20;
 $color-light-secondary-input-label: #222222;
 $color-light-secondary-input-text: #222222;
 $color-light-secondary-input-text-hover: #222222;
 $color-light-secondary-input-placeholder: #8d957e;
 
-// Dark theme input colors
+// INPUT Dark theme input colors
 $color-dark-primary-input-bg: #222222;
-$color-dark-primary-input-border: #ff0000;
-$color-dark-primary-input-border-hover: #cc0000;
+$color-dark-primary-input-border: #5a4949;
+$color-dark-primary-input-border-hover: #e9de8e;
 $color-dark-primary-input-label: #fef6dc;
 $color-dark-primary-input-text: #fef6dc;
 $color-dark-primary-input-text-hover: #fef6dc;
@@ -246,28 +205,84 @@ $color-dark-secondary-input-text: #fef6dc;
 $color-dark-secondary-input-text-hover: #fef6dc;
 $color-dark-secondary-input-placeholder: #cad3d0;
 
-// SELECT COLORS
-// Light theme select colors
-$color-light-primary-select-bg: #FFFFFF;
+// BUTTON COLORS LIGHT THEME
+$color-light-primary-btn: #964f20;
+$color-light-primary-btn-text: #fef6dc;
+$color-light-primary-btn-hover: #964f20;
+$color-light-primary-btn-text-hover: #fef6dc;
+$color-light-primary-btn-border: #fef6dc;
+$color-light-primary-btn-border-hover: #372b06;
+
+$color-light-secondary-btn: #978C2C;
+$color-light-secondary-btn-text: #581d0d;
+$color-light-secondary-btn-hover: #453f09;
+$color-light-secondary-btn-text-hover: #fef6dc;
+$color-light-secondary-btn-border: #fef6dc;
+$color-light-secondary-btn-border-hover: #745a04;
+
+$color-light-flat-btn: transparent;
+$color-light-flat-btn-text: #964f20;
+$color-light-flat-btn-hover: #05322b;
+$color-light-flat-btn-text-hover: #523cb5;
+$color-light-flat-btn-border: transparent;
+$color-light-flat-btn-border-hover: transparent;
+
+// BUTTON COLORS DARK THEME
+$color-dark-primary-btn: #b5a93c;
+$color-dark-primary-btn-text: #222222;
+$color-dark-primary-btn-hover: #964f20;
+$color-dark-primary-btn-text-hover: #fef6dc;
+$color-dark-primary-btn-border: #222222;
+$color-dark-primary-btn-border-hover: #fef6dc;
+
+$color-dark-secondary-btn: #cad3d0;
+$color-dark-secondary-btn-text: #222222;
+$color-dark-secondary-btn-hover: #552110;
+$color-dark-secondary-btn-text-hover: #fef6dc;
+$color-dark-secondary-btn-border: #222222;
+$color-dark-secondary-btn-border-hover: #fef6dc;
+
+$color-dark-flat-btn: transparent;
+$color-dark-flat-btn-text: #b5a93c;
+$color-dark-flat-btn-hover: #222222;
+$color-dark-flat-btn-text-hover: #fef6dc;
+$color-dark-flat-btn-border: transparent;
+$color-dark-flat-btn-border-hover: transparent;
+
+// SELECT COLORS LIGHT THEME
+$color-light-primary-select-bg: #000;
 $color-light-primary-select-border: grey;
-$color-light-primary-select-border-hover: #00cc00;
-$color-light-primary-select-label: #222222;
-$color-light-primary-select-text: gold;
-$color-light-primary-select-text-hover: #222222;
-$color-light-primary-select-placeholder: gold;
+$color-light-primary-select-border-hover: #964f20;
+$color-light-primary-select-label: #fff;
+$color-light-primary-select-text: #fff;
+$color-light-primary-select-text-hover: red;
+$color-light-primary-select-placeholder: #8d957e;
 
-$color-light-secondary-select-bg: #000;
-$color-light-secondary-select-border: #ff0000;
-$color-light-secondary-select-border-hover: #cc0000;
-$color-light-secondary-select-label: #fff;
-$color-light-secondary-select-text: yellow;
-$color-light-secondary-select-text-hover: #fff;
-$color-light-secondary-select-placeholder: #fff;
+$color-light-secondary-select-bg: #cad3d0;
+$color-light-secondary-select-border: #964f20;
+$color-light-secondary-select-border-hover: #964f20;
+$color-light-secondary-select-label: #222222;
+$color-light-secondary-select-text: #222222;
+$color-light-secondary-select-text-hover: #222222;
+$color-light-secondary-select-placeholder: #8d957e;
 
-// Dark theme select colors
+// SELECT ITEMS COLORS LIGHT THEME
+$color-light-primary-select-item-text: #fff;
+$color-light-primary-select-item-bg: #000;
+$color-light-primary-select-item-bg-hover: #978C2C;
+$color-light-primary-select-item-bg-selected: #964f20;
+$color-light-primary-select-item-text-selected: #fef6dc;
+
+$color-light-secondary-select-item-text: #222222;
+$color-light-secondary-select-item-bg: #cad3d0;
+$color-light-secondary-select-item-bg-hover: #8d957e;
+$color-light-secondary-select-item-bg-selected: #964f20;
+$color-light-secondary-select-item-text-selected: #fef6dc;
+
+// SELECT COLORS DARK THEME
 $color-dark-primary-select-bg: #222222;
-$color-dark-primary-select-border: #ff0000;
-$color-dark-primary-select-border-hover: #cc0000;
+$color-dark-primary-select-border: #5a4949;
+$color-dark-primary-select-border-hover: #e9de8e;
 $color-dark-primary-select-label: #fef6dc;
 $color-dark-primary-select-text: #fef6dc;
 $color-dark-primary-select-text-hover: #fef6dc;
@@ -281,32 +296,15 @@ $color-dark-secondary-select-text: #fef6dc;
 $color-dark-secondary-select-text-hover: #fef6dc;
 $color-dark-secondary-select-placeholder: #cad3d0;
 
-// SELECT ITEMS COLORS
-// Light theme select items colors
-$color-light-primary-select-item-text: #222222;
-$color-light-primary-select-item-bg: #FFFFFF;
-$color-light-primary-select-item-bg-hover: #cad3d0;
-$color-light-primary-select-item-bg-selected: #964f20;
-$color-light-primary-select-item-text-selected: #fef6dc;
-
-$color-light-secondary-select-item-text: #fff;
-$color-light-secondary-select-item-bg: green;
-$color-light-secondary-select-item-bg-hover: blue;
-$color-light-secondary-select-item-bg-selected: silver;
-$color-light-secondary-select-item-text-selected: red;
-
-// Dark theme select items colors
+// SELECT ITEMS COLORS DARK THEME
 $color-dark-primary-select-item-text: #fef6dc;
-$color-dark-primary-select-item-bg: #8d957e;
-$color-dark-primary-select-item-bg-hover: #cad3d0;
+$color-dark-primary-select-item-bg: #222222;
+$color-dark-primary-select-item-bg-hover: #8d957e;
 $color-dark-primary-select-item-bg-selected: #b5a93c;
 $color-dark-primary-select-item-text-selected: #222222;
 
 $color-dark-secondary-select-item-text: #fef6dc;
-$color-dark-secondary-select-item-bg: #222222;
-$color-dark-secondary-select-item-bg-hover: #964f20;
-$color-dark-secondary-select-item-bg-selected: #cad3d0;
+$color-dark-secondary-select-item-bg: #8d957e;
+$color-dark-secondary-select-item-bg-hover: #cad3d0;
+$color-dark-secondary-select-item-bg-selected: #b5a93c;
 $color-dark-secondary-select-item-text-selected: #222222;
-
-$color-scrim: #000;
-$color-shadow: #000;
