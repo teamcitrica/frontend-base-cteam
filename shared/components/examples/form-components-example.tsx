@@ -107,7 +107,6 @@ const FormComponentsExample = () => {
               }}
               startIcon="BookOpen"
               description="Elige el área de estudio que más te interese"
-              isMultiline
             />
 
             {/* Textarea */}
