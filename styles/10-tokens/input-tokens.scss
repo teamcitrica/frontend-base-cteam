@@ -17,7 +17,7 @@ $input-citrica-ui: (
   @include a-set($input-citrica-ui);
   
   [data-slot="input-wrapper"] {
-    border-radius: 0px;
+    border-radius: var(--form-radius-input);
   }
 }
 
@@ -29,7 +29,7 @@ $input-citrica-ui: (
 .input-primary{
   [data-slot="input-wrapper"] {
     background-color: var(--color-primary-input-bg);
-    border: 2px solid var(--color-primary-input-border);
+    border: var(--form-border-size-input) solid var(--color-primary-input-border);
     
     &:hover {
       border-color: var(--color-primary-input-border-hover);

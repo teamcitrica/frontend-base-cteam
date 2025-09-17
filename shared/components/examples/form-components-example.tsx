@@ -68,7 +68,6 @@ const FormComponentsExample = () => {
               value={formData.email}
               onValueChange={handleInputChange('email')}
               startIcon="Mail"
-              color="primary"
               required
             />
 

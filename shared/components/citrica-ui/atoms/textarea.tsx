@@ -11,7 +11,7 @@ interface TextareaProps {
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onValueChange?: (value: string) => void;
   name?: string;
-  variant?: 'flat' | 'bordered' | 'faded' | 'underlined';
+  variant?: 'primary' | 'secondary' | 'flat' | 'bordered' | 'faded' | 'underlined';
   color?: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'danger';
   size?: 'sm' | 'md' | 'lg';
   radius?: 'none' | 'sm' | 'md' | 'lg' | 'full';
@@ -47,8 +47,7 @@ const Textarea = ({
   onChange,
   onValueChange,
   name,
-  variant = 'bordered',
-  color = 'default',
+  variant = 'primary',
   size = 'md',
   radius = 'md',
   required = false,
@@ -67,6 +66,24 @@ const Textarea = ({
   minRows,
   maxRows,
 }: TextareaProps) => {
+  const getTextareaClassByVariant = (variant: string) => {
+    switch (variant) {
+      case "primary":
+        return "textarea-primary";
+      case "secondary":
+        return "textarea-secondary";
+      case "flat":
+      case "bordered":
+      case "faded":
+      case "underlined":
+      default:
+        return "";
+    }
+  };
+
+  const shouldUseCustomVariant = variant === 'primary' || variant === 'secondary';
+  const heroVariant = shouldUseCustomVariant ? 'bordered' : variant;
+
   return (
     <HeroTextarea
       label={label}
@@ -76,8 +93,8 @@ const Textarea = ({
       onChange={onChange}
       onValueChange={onValueChange}
       name={name}
-      variant={variant}
-      color={color}
+      variant={heroVariant}
+      color={'default'}
       size={size}
       radius={radius}
       isRequired={required}
@@ -86,7 +103,11 @@ const Textarea = ({
       isInvalid={isInvalid}
       errorMessage={errorMessage}
       description={description}
-      className={clsx(className)}
+      className={clsx(
+        "textarea-citrica-ui",
+        getTextareaClassByVariant(variant),
+        className
+      )}
       classNames={classNames}
       fullWidth={fullWidth}
       autoFocus={autoFocus}

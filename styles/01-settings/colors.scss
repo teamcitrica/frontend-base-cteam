@@ -255,7 +255,7 @@ $color-light-primary-select-border: grey;
 $color-light-primary-select-border-hover: #964f20;
 $color-light-primary-select-label: #fff;
 $color-light-primary-select-text: #fff;
-$color-light-primary-select-text-hover: red;
+$color-light-primary-select-text-hover: rgb(37, 58, 133);
 $color-light-primary-select-placeholder: #8d957e;
 
 $color-light-secondary-select-bg: #cad3d0;
@@ -268,7 +268,7 @@ $color-light-secondary-select-placeholder: #8d957e;
 
 // SELECT ITEMS COLORS LIGHT THEME
 $color-light-primary-select-item-text: #fff;
-$color-light-primary-select-item-bg: #000;
+$color-light-primary-select-item-bg: #d4bc67;
 $color-light-primary-select-item-bg-hover: #978C2C;
 $color-light-primary-select-item-bg-selected: #964f20;
 $color-light-primary-select-item-text-selected: #fef6dc;
@@ -308,3 +308,37 @@ $color-dark-secondary-select-item-bg: #8d957e;
 $color-dark-secondary-select-item-bg-hover: #cad3d0;
 $color-dark-secondary-select-item-bg-selected: #b5a93c;
 $color-dark-secondary-select-item-text-selected: #222222;
+
+// TEXTAREA COLORS LIGHT THEME
+$color-light-primary-textarea-bg: #FFFFFF;
+$color-light-primary-textarea-border: grey;
+$color-light-primary-textarea-border-hover: #964f20;
+$color-light-primary-textarea-label: #222222;
+$color-light-primary-textarea-text: #222222;
+$color-light-primary-textarea-text-hover: #222222;
+$color-light-primary-textarea-placeholder: #8d957e;
+
+$color-light-secondary-textarea-bg: #cad3d0;
+$color-light-secondary-textarea-border: #964f20;
+$color-light-secondary-textarea-border-hover: #964f20;
+$color-light-secondary-textarea-label: #222222;
+$color-light-secondary-textarea-text: #222222;
+$color-light-secondary-textarea-text-hover: #222222;
+$color-light-secondary-textarea-placeholder: #8d957e;
+
+// TEXTAREA COLORS DARK THEME
+$color-dark-primary-textarea-bg: #222222;
+$color-dark-primary-textarea-border: #5a4949;
+$color-dark-primary-textarea-border-hover: #e9de8e;
+$color-dark-primary-textarea-label: #fef6dc;
+$color-dark-primary-textarea-text: #fef6dc;
+$color-dark-primary-textarea-text-hover: #fef6dc;
+$color-dark-primary-textarea-placeholder: #8d957e;
+
+$color-dark-secondary-textarea-bg: #8d957e;
+$color-dark-secondary-textarea-border: #ffff00;
+$color-dark-secondary-textarea-border-hover: #cccc00;
+$color-dark-secondary-textarea-label: #fef6dc;
+$color-dark-secondary-textarea-text: #fef6dc;
+$color-dark-secondary-textarea-text-hover: #fef6dc;
+$color-dark-secondary-textarea-placeholder: #cad3d0;

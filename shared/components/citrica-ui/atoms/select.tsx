@@ -113,7 +113,6 @@ const Select = ({
       variant={heroVariant}
       color={color}
       size={size}
-      radius={radius}
       isRequired={required}
       isDisabled={disabled}
       isInvalid={isInvalid}
@@ -136,6 +135,7 @@ const Select = ({
           description={option.description}
           startContent={option.startContent}
           endContent={option.endContent}
+          className='select-item-citrica-ui'
         >
           {option.label}
         </SelectItem>

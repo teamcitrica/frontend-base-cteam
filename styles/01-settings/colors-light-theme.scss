@@ -74,6 +74,23 @@
   --color-secondary-select-item-bg-hover: #{$color-light-secondary-select-item-bg-hover};
   --color-secondary-select-item-bg-selected: #{$color-light-secondary-select-item-bg-selected};
   --color-secondary-select-item-text-selected: #{$color-light-secondary-select-item-text-selected};
+
+  // Textarea colors
+  --color-primary-textarea-bg: #{$color-light-primary-textarea-bg};
+  --color-primary-textarea-border: #{$color-light-primary-textarea-border};
+  --color-primary-textarea-border-hover: #{$color-light-primary-textarea-border-hover};
+  --color-primary-textarea-label: #{$color-light-primary-textarea-label};
+  --color-primary-textarea-text: #{$color-light-primary-textarea-text};
+  --color-primary-textarea-text-hover: #{$color-light-primary-textarea-text-hover};
+  --color-primary-textarea-placeholder: #{$color-light-primary-textarea-placeholder};
+
+  --color-secondary-textarea-bg: #{$color-light-secondary-textarea-bg};
+  --color-secondary-textarea-border: #{$color-light-secondary-textarea-border};
+  --color-secondary-textarea-border-hover: #{$color-light-secondary-textarea-border-hover};
+  --color-secondary-textarea-label: #{$color-light-secondary-textarea-label};
+  --color-secondary-textarea-text: #{$color-light-secondary-textarea-text};
+  --color-secondary-textarea-text-hover: #{$color-light-secondary-textarea-text-hover};
+  --color-secondary-textarea-placeholder: #{$color-light-secondary-textarea-placeholder};
     
   // Primary colors
   --color-primary: #{$color-light-primary};
