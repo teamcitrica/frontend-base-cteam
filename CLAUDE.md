@@ -25,8 +25,31 @@ The app uses a structured atomic design pattern:
 ### Citrica UI System (`/shared/components/citrica-ui/`)
 - **Atoms**: Basic components like `text.tsx`, `card.tsx`, `icon.ts`
 - **Molecules**: Combined components like `button.tsx`, `carrusel.tsx`, `modal.tsx`  
-- **Organisms**: Complex components like `navbar.tsx`, `sidebar.tsx`, `footer.tsx`
+- **Organisms**: Complex components like `navbar.tsx`, `sidebar.tsx`, `footer.tsx`, `header.tsx`
 - **Third-parties**: External component integrations like `video.jsx`
+
+#### Header Component (`header.tsx`)
+Multi-variant header component with optional button functionality:
+
+**Variants:**
+- `travel`: Dark overlay style with centered navigation and white CTA button
+- `team`: Clean white background with split navigation and black rounded CTA button  
+- `minimal`: Simple layout with only logo and optional button (no navigation)
+
+**Props:**
+- `logo?: React.ReactNode` - Custom logo component
+- `variant?: 'travel' | 'team' | 'minimal'` - Header style variant (default: 'travel')
+- `className?: string` - Additional CSS classes
+- `showButton?: boolean` - Controls button visibility (default: false)
+- `buttonText?: string` - Custom button text (default: 'GET STARTED')
+- `onButtonClick?: () => void` - Custom button click handler
+
+**Features:**
+- Responsive design with mobile hamburger menu
+- Scroll-based background transitions
+- Auto-adapts button text for each variant (respects custom text)
+- Uses siteConfig.navLinks for navigation items
+- Smooth scroll to sections functionality
 
 ### Custom Styling System
 - SCSS files organized in numbered folders (01-settings to 11-atomic-design)

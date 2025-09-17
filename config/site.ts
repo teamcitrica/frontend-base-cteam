@@ -12,13 +12,25 @@ export const siteConfig = {
 			href: "/",
 		},
 		{
-			title: "Proyectos",
+			title: "Item2",
 			href: "#proyect",
 		},
 		{
-			title: "Panel",
+			title: "Panel3",
 			href: "/panel",
 		},
+				{
+			title: "Inicio4",
+			href: "/",
+		},
+		{
+			title: "Proyectos5",
+			href: "#proyect",
+		},
+		{
+			title: "Panel6",
+			href: "/panel",
+		}
 	],
 	subItemSearchParam: SUBITEM_SEARCH_PARAM, // FOR SUBSECTIONS IN SIDEBAR
 	sidebarItems: [
