@@ -13,6 +13,13 @@ $btn-citrica-ui: (
 .btn-citrica-ui{
   border-radius: 0px;
   min-width: 140px;
+  &:hover, &:active, &:focus { // AVOID DEFAULT OPACITY CHANGE
+    opacity: 1 !important;
+    border-color: inherit !important;
+    filter: none !important;
+    transform: none !important;
+    box-shadow: inherit !important;
+  }
   @include a-set($btn-citrica-ui);
 }
 
