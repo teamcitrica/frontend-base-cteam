@@ -13,7 +13,7 @@ $select-citrica-ui: (
 
 .select-citrica-ui{
   min-width: 140px !important;
-  width: 380px !important;
+  max-width: 380px !important;
   @include a-set($select-citrica-ui);
   
   &[data-slot="base"] {
