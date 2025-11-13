@@ -2,7 +2,6 @@
 import React from "react"
 import { Suspense } from 'react';
 import { Button, Link } from "@heroui/react"
-import { ChevronDown, Menu } from "lucide-react"
 import type { SidebarProps, MenuItem } from "../../../types/sidebar"
 import { Icon, Text } from "@citrica-ui"
 import { IconName } from "@/shared/components/citrica-ui/atoms/icon"
@@ -27,7 +26,7 @@ function AccordionItem({ item, isOpen, onToggle }: { item: MenuItem; isOpen: boo
           <Icon name={item.icon as IconName} size={20} />
           <Text variant="label">{item.title}</Text>
         </span>
-        <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`} />
+        <Icon name="ChevronDown" className={`h-4 w-4 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`} />
       </Button>
       {isOpen && item.subItems && (
         <div className="ml-6 mt-2 flex flex-col gap-2">
@@ -89,8 +88,8 @@ export function Sidebar({ items }: SidebarProps) {
     <>
       {/* Mobile Drawer */}
       <Button className="md:hidden" isIconOnly variant="light" onPress={() => setIsOpen(true)}>
-        <Menu className="h-5 w-5" />
-        <span className="sr-only">Toggle navigation menu</span>
+        <Icon name="Menu" className="h-5 w-5" />
+        <Text variant='label' className="sr-only">Toggle navigation menu</Text>
       </Button>
 
       {/* Mobile Sidebar */}
@@ -102,7 +101,7 @@ export function Sidebar({ items }: SidebarProps) {
         <div className="flex h-16 items-center justify-between px-4">
           <h2 className="text-lg font-semibold">Navegación</h2>
           <Button isIconOnly variant="light" onPress={() => setIsOpen(false)}>
-            <ChevronDown className="h-6 w-6 rotate-90" />
+            <Icon name="ChevronDown" className="h-6 w-6 rotate-90" />
           </Button>
         </div>
         <NavItems />
